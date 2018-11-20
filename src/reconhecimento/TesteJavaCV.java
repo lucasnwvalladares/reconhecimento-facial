@@ -6,6 +6,7 @@
 package reconhecimento;
 
 import org.bytedeco.javacpp.opencv_face;
+import org.bytedeco.javacpp.opencv_face.FaceRecognizer;
 
 /**
  *
@@ -13,6 +14,6 @@ import org.bytedeco.javacpp.opencv_face;
  */
 public class TesteJavaCV {
     public static void main(String[] args) {
-        opencv_face.FaceRecognizer r = opencv_face.EigenFaceRecognizer.create();
+        FaceRecognizer r = opencv_face.EigenFaceRecognizer.create();
     }
 }
